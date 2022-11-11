@@ -13,9 +13,9 @@
     </style>
     <ul>
         <% for (let i = 0; i < drinks.length; i++) { %>
-            <li>
+            <li><a href = "/drinks/<%= i%>">
             <%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1) %>
-            </li>
+            </li></a>
         <% } %>
     </ul>
 </body>
