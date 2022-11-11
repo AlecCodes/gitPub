@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-    </h1>
+    <h1>Welcome to GitPub</h1>
+    <style>
+        body{background-color:aqua}
+    </style>
+    <ul>
+        <% for (let i = 0; i < drinks.length; i++) { %>
+            <li>
+            <%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1) %>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>

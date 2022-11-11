@@ -8,7 +8,7 @@ const drinks = require('./models/drinks')
 
 //GET ROUTE
 app.get('/drinks', (req, res) =>{
-    res.send(drinks)
+    res.render('drinks_index.ejs', {drinks})
 })
 
 
