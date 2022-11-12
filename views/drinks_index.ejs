@@ -22,8 +22,10 @@
     <h1>Food Menu</h1>
     <ul>
         <% for (let i = 0; i <foods.length; i++) { %>
-            <li><%= foods[i].name %> </li>
-        <% } %> 
+            <li><a href = <%= '/foods/'+i %> >
+                <%= foods[i].name %>
+            </a></li>
+        <% } %>
     </ul>
 </body>
 </html>
