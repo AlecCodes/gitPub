@@ -11,12 +11,19 @@
     <style>
         body{background-color:aqua}
     </style>
+    <h1>Beverages</h1> 
     <ul>
         <% for (let i = 0; i < drinks.length; i++) { %>
             <li><a href = "/drinks/<%= i%>">
             <%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1) %>
-            </li></a>
+            </a></li> 
         <% } %>
+    </ul>
+    <h1>Food Menu</h1>
+    <ul>
+        <% for (let i = 0; i <foods.length; i++) { %>
+            <li><%= foods[i].name %> </li>
+        <% } %> 
     </ul>
 </body>
 </html>
